@@ -1,0 +1,71 @@
+name: Bug Report
+description: "File a bug report. See what a bug means."
+title: "Bug Report: INPUT TITLE HERE."
+labels: ["bug"]
+assignees:
+  - "bug"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report! If you don't follow it, you are impolite, I will close your thread.
+  - type: input
+    id: description
+    attributes:
+      label: Describe the bug.
+      description: A clear and concise description of what the bug is.
+      placeholder: Incompatibility with plugin Scoreboard..
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Also tell us, what did you expect to happen?
+      placeholder: "The main description of the bug goes here, keep it clear, concise and polite."
+    validations:
+      required: true
+  - type: input
+    id: version-plugin
+    attributes:
+      label: What version of the plugin are you using?
+      description: "DON'T say just 'latest', say NORMALLY! I'm tired of you all saying just 'latest', but in reality not, here you can see how it lead to CONFUSION: [#10](https://github.com/marlester-dev/ReallyFakePlayers/issues/10)."
+      placeholder: vX.X.X.X
+    validations:
+      required: true
+  - type: input
+    id: version-mc
+    attributes:
+      label: What Minecraft version does your server use?
+      description: Same with the pl version, DON'T say just "latest"!
+      placeholder: vX.X.X
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant log output or error stacktrace.
+      description: If there is, then paste! Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
+      placeholder: "If there is a log, PASTE it so I don't have to ask you twice. Don't use pastebin or any third-party sites, paste it here!"
+      render: shell
+  - type: input
+    id: changeconfig
+    attributes:
+      label: Did you make any (noteworthy) changes to configuration?
+      placeholder: Yes, they are:.. / No, only changed messages.
+    validations:
+      required: true
+  - type: checkboxes
+    id: nosimilar
+    attributes:
+      label: "Checklist."
+      description: "Let's make sure this report is not invalid."
+      options:
+        - label: I am running latest version of the plugin.
+          required: true
+        - label: I confirm that there are no similar issues.
+          required: true
+        - label: I ticked all of the boxes without actually reading them.
+          required: false
+        - label: I am not trying to run the plugin on an unsupported server version / platform.
+          required: true

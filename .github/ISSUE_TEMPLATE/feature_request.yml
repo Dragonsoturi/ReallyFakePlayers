@@ -1,0 +1,57 @@
+name: Feature Request
+description: "Request a feature. See what a feature request means."
+title: "Feature Request: INPUT TITLE HERE."
+labels: ["enhancement"]
+assignees:
+  - "enhancement"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this request report! If you don't follow it, you are impolite, I will close your thread.
+  - type: textarea
+    id: main
+    attributes:
+      label: Is your feature request related to a problem? Please describe.
+      description: Also tell us, what did you expect to happen?
+      placeholder: "The main description of the feature request goes here, keep it clear, concise and polite."
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Describe the solution you'd like
+      placeholder: "I would like to.."
+    validations:
+      required: true
+  - type: input
+    id: version-mcd
+    attributes:
+      label: Describe alternatives you've considered
+      placeholder: "I tried to.."
+    validations:
+      required: true
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional context
+      placeholder: "Add any other context/screenshots or arts about the feature request here."
+    validations:
+      required: false
+  - type: textarea
+    id: additionaly
+    attributes:
+      label: Is it really worth adding this feature?
+      placeholder: "Think, think."
+    validations:
+      required: false
+  - type: checkboxes
+    id: nosimilad
+    attributes:
+      label: "Checklist."
+      description: "Let's make sure this report is not invalid."
+      options:
+        - label: I confirm that there are no similar issues.
+          required: true
+        - label: I ticked all of the boxes without actually reading them.
+          required: false
