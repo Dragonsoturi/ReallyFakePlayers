@@ -29,7 +29,7 @@ body:
     id: version-plugin
     attributes:
       label: What version of the plugin are you using?
-      description: "DON'T say just 'latest', say NORMALLY! I'm tired of you all saying just 'latest', but in reality not, here you can see how it lead to CONFUSION: [#10](https://github.com/marlester-dev/ReallyFakePlayers/issues/10)."
+      description: "Don't just say 'latest', say exact version."
       placeholder: vX.X.X.X
     validations:
       required: true
@@ -45,8 +45,8 @@ body:
     id: logs
     attributes:
       label: Relevant log output or error stacktrace.
-      description: If there is, then paste! Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
-      placeholder: "If there is a log, PASTE it so I don't have to ask you twice. Don't use pastebin or any third-party sites, paste it here!"
+      description: If there is, then paste. Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
+      placeholder: "If there is a log, paste it. Don't use pastebin or any third-party sites, paste it here."
       render: shell
   - type: input
     id: changeconfig
