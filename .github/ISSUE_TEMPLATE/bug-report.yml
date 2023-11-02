@@ -1,5 +1,5 @@
 name: Bug Report
-description: "File a bug report. See what a bug means."
+description: "File a bug report."
 title: "Bug Report: INPUT TITLE HERE."
 labels: ["bug"]
 assignees:
